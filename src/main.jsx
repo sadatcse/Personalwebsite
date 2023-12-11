@@ -36,7 +36,7 @@ import About from './components/Page/About';
 import Blog from './components/Page/Blog';
 import Portfolio from './components/Page/Portfolio';
 import Service from './components/Page/Service';
-
+import Contact from './components/Page/Contact';
 
 
 
