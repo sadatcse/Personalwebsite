@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
+
 import {HelmetProvider } from 'react-helmet-async';
 
 
@@ -21,22 +22,9 @@ const queryClient = new QueryClient();
 
 import Root from './components/Root';
 import AuthProvider from './providers/AuthProvider';
-
-
-
-
-
-
 import Login from './components/Authentication/Login';
-
-
 import Home from './components/Page/Home';
 import Error404 from './components/Page/Error404';
-import About from './components/Page/About';
-import Blog from './components/Page/Blog';
-import Portfolio from './components/Page/Portfolio';
-import Service from './components/Page/Service';
-import Contact from './components/Page/Contact';
 
 
 
@@ -56,27 +44,7 @@ const router = createBrowserRouter([
         path:'/login',
         element:<Login></Login>
       },
-      {
-        path:'/about',
-        element:<About></About>
-      },
-      {
-        path:'/service',
-        element:<Service></Service>
-      },
-      {
-        path:'/portfolio',
-        element:<Portfolio></Portfolio>
-      },
-      {
-        path:'/blog',
-        element:<Blog></Blog>
-      },
-      {
-        path:'/contact',
-        element:<Contact></Contact>
-      },
-       
+      
     ]
   },
  

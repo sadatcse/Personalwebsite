@@ -1,23 +1,23 @@
 import React from 'react';
-import Banner from './../Section/Banner';
-import Aboutshow from './../Section/Aboutshow';
-import Portfolioshowcase from './../Section/Portfolioshowcase';
-import Quotes from '../Section/Quotes';
-import WhatIDo from '../Section/WhatIDo';
-import Testimonials from '../Section/Testimonials';
-import RecentBlog from '../Section/RecentBlog';
+import HeroSection from './../Section/HeroSection';
+import AboutMe from './../Section/AboutMe';
+import ContactMe from './../Section/ContactMe';
+import MyPortfolio from '../Section/MyPortfolio';
+import MySkills from './../Section/MySkills';
+import Testimonial from './../Section/Testimonials';
+
 
 const Home = () => {
     return (
         
         <div>
-            <Banner></Banner>
-            <Aboutshow></Aboutshow>
-            <Portfolioshowcase></Portfolioshowcase>
-            <Quotes></Quotes>
-            <WhatIDo></WhatIDo>
-            <Testimonials></Testimonials>
-            <RecentBlog></RecentBlog>
+            <HeroSection></HeroSection>
+            <AboutMe></AboutMe>
+            <MyPortfolio></MyPortfolio>
+            <MySkills></MySkills>
+            <Testimonial></Testimonial>
+            <ContactMe></ContactMe>
+ 
         </div>
     );
 };

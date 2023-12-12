@@ -1,18 +1,49 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { useState, useEffect } from "react";
+
+import { Link } from "react-scroll";
 
 const Navbar = () => {
 
+  const [navActive, setNavActive] = useState(false);
+
+  const toggleNav = () => {
+    setNavActive(!navActive);
+  };
+
+  const closeMenu = () => {
+    setNavActive(false);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 500) {
+        closeMenu;
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (window.innerWidth <= 1200) {
+      closeMenu;
+    }
+  }, []);
+
   const navlinks = <> 
-  <li><NavLink to="/">Home</NavLink></li>
-  <li><NavLink to="/about">About</NavLink></li>
-  <li><NavLink to="/service">Service</NavLink></li>
-  <li><NavLink to="/portfolio">Portfolio</NavLink></li>
-  <li><NavLink to="/blog">Blog</NavLink></li>
-  <li><NavLink to="/contact">Contact</NavLink></li>
+
+  <li><Link onClick={closeMenu} spy={true} smooth={true} offset={-70} duration={500} to="heroSection" >Home</Link></li>
+  <li><Link onClick={closeMenu} spy={true} smooth={true} offset={-70} duration={500} to="AboutMe" >About Me</Link></li>
+  <li><Link onClick={closeMenu} spy={true} smooth={true} offset={-70} duration={500} to="MyPortfolio" >Portfolio</Link></li>
+  <li><Link onClick={closeMenu} spy={true} smooth={true} offset={-70} duration={500} to="mySkills" >Skills</Link></li>
   </>
     return (
-        <div className='border-b-2 border-inherit'>
+        <div className='border-b-2 border-inherit z-10'>
           <div className="navbar bg-base-100">
   <div className="navbar-start">
     <div className="dropdown">
@@ -31,7 +62,17 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Login</a>
+  <Link
+        onClick={closeMenu}
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+        to="Contact"
+        className="btn btn-outline btn-secondary"
+      >
+        Contact Me
+      </Link>
   </div>
 </div>
         </div>
@@ -39,3 +80,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+

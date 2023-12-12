@@ -1,0 +1,86 @@
+{
+  "skills": [
+    {
+      "id": "1",
+      "src": "./img/product-chain-1.png",
+      "title": "Front-End",
+      "description": "I am an expert in React and I enjoy crafting web applications. Additionally, I am proficient in HTML, CSS, and various CSS frameworks."
+    },
+    {
+      "id": "2",
+      "src": "./img/tag-1.png",
+      "title": "Back-End",
+      "description": "I have a strong command over Node.js, Express.js, MongoDB, and Firebase in backend development. My particular affinity lies with MongoDB."
+    },
+    {
+      "id": "3",
+      "src": "./img/feather-pen-2.png",
+      "title": "UI & UX Design",
+      "description": " I have a knack for creating visually appealing interfaces that prioritize a seamless and intuitive user experience."
+    },
+    {
+      "id": "4",
+      "src": "./img/feather-pen-1.png",
+      "title": "Webflow Development",
+      "description": " I'm adept at using Webflow's features to bring designs to life, ensuring responsive layouts, smooth interactions, and efficient workflows for effective web development."
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "E-commerce Website",
+      "id": "1",
+      "description": "Developed a full-stack e-commerce platform using React and Node.js. Implemented a responsive design with Tailwind CSS for a sleek user interface.",
+      "technologiesUsed": ["React", "Node.js", "Tailwind CSS"],
+      "liveLink": "https://www.example-ecommerce.com",
+      "clintside": "https://www.example-ecommerce.com",
+      "serverside": "https://www.example-ecommerce.com",
+      "src": "./img/placeholder-image.png"
+    },
+    {
+      "name": "Portfolio Dashboard",
+      "id": "2",
+      "description": "Created a personalized dashboard for portfolio management. Utilized React components for dynamic data visualization and Tailwind CSS for styling.",
+      "technologiesUsed": ["React", "Tailwind CSS"],
+      "liveLink": "https://www.example-ecommerce.com",
+      "clintside": "https://www.example-ecommerce.com",
+      "serverside": "https://www.example-ecommerce.com",
+      "src": "./img/placeholder-image-1.png"
+    },
+    {
+      "name": "Social Media Analytics App",
+      "id": "3",
+      "description": "Developed a data analytics app for social media metrics. Used React for the front end and integrated Tailwind CSS for UI/UX enhancements.",
+      "technologiesUsed": ["React", "Tailwind CSS"],
+      "liveLink": "https://www.example-ecommerce.com",
+      "clintside": "https://www.example-ecommerce.com",
+      "serverside": "https://www.example-ecommerce.com",
+      "src": "./img/placeholder-image-2.png"
+    }
+  ],
+  "testimonial": [
+    {
+      "id": "1",
+      "count": "5",
+      "src": "./img/avatar-image.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "author_name": "Dianne Russel",
+      "author_designation": "Starbucks"
+    },
+    {
+      "id": "2",
+      "count": "5",
+      "src": "./img/avatar-image-1.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "author_name": "Kristin Watson",
+      "author_designation": "Louis Vuitton"
+    },
+    {
+      "id": "3",
+      "count": "5",
+      "src": "./img/avatar-image-2.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "author_name": "Kathryn Murphy",
+      "author_designation": "McDonald's"
+    }
+  ]
+}
